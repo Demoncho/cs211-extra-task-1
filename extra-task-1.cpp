@@ -237,5 +237,8 @@ int main()
 	assert(abs(time_from_utc(-1, 0.0) - 23.0) < DBL_EPSILON  && "test28");
 	assert(abs(time_from_utc(-1, 23.0) - 22.0) < DBL_EPSILON  && "test29");
 	assert(abs(time_from_utc(+1, 23.0) - 0.0) < DBL_EPSILON  && "test30");
+	assert(get_hours(3800) == 1 &&  "test31");
+	assert(get_minutes(3800) ==3 &&  "test32");
+	assert(get_seconds(3800) ==20 &&  "test33");
 }
 
